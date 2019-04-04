@@ -1,0 +1,27 @@
+{
+  "db_info": [
+    {
+      "dbType": "mysql",
+      "host": "10.110.181.39",
+      "dbName": "leapid",
+      "port": "3306",
+      "userName": "leapid",
+      "passWd": "leapid-db-pwd",
+      "target_position": "HIVE",
+      "conn_name": "LEAP_SYSTEM_HIVE",
+      "target_db": "default"
+    },
+    {
+      "dbType": "mysql",
+      "host": "10.110.181.39",
+      "dbName": "datahub",
+      "port": "3306",
+      "userName": "pristuser",
+      "passWd": "pristuser",
+      "target_position": "HIVE",
+      "conn_name": "LEAP_SYSTEM_HIVE",
+      "target_db": "default"
+    }
+  ]
+}
+
