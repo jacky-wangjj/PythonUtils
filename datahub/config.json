@@ -3,6 +3,17 @@
     {
       "dbType": "mysql",
       "host": "10.110.181.39",
+      "dbName": "test",
+      "port": "3306",
+      "userName": "test",
+      "passWd": "123456",
+      "target_position": "HIVE",
+      "conn_name": "LEAP_SYSTEM_HIVE",
+      "target_db": "default"
+    },
+    {
+      "dbType": "mysql",
+      "host": "10.110.181.39",
       "dbName": "leapid",
       "port": "3306",
       "userName": "leapid",
@@ -16,8 +27,8 @@
       "host": "10.110.181.39",
       "dbName": "datahub",
       "port": "3306",
-      "userName": "pristuser",
-      "passWd": "pristuser",
+      "userName": "priestuser",
+      "passWd": "priestuser",
       "target_position": "HIVE",
       "conn_name": "LEAP_SYSTEM_HIVE",
       "target_db": "default"
