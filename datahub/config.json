@@ -1,17 +1,27 @@
 {
   "db_info": [
     {
+      "project": "Public_Repository",
       "dbType": "mysql",
       "host": "10.110.181.39",
-      "dbName": "test",
+      "dbName": "testDB",
       "port": "3306",
       "userName": "test",
       "passWd": "123456",
       "target_position": "HIVE",
       "conn_name": "LEAP_SYSTEM_HIVE",
+      "source_table": [
+        {
+          "db": "testDB",
+          "table": [
+            "student2"
+          ]
+        }
+      ],
       "target_db": "default"
     },
     {
+      "project": "Public_Repository",
       "dbType": "mysql",
       "host": "10.110.181.39",
       "dbName": "leapid",
@@ -20,9 +30,32 @@
       "passWd": "leapid-db-pwd",
       "target_position": "HIVE",
       "conn_name": "LEAP_SYSTEM_HIVE",
+      "source_table": [
+        {
+          "db": "leapid",
+          "table": [
+            "group_user",
+            "leapid"
+          ]
+        }
+      ],
       "target_db": "default"
     },
     {
+      "project": "Public_Repository",
+      "dbType": "mysql",
+      "host": "10.110.181.39",
+      "dbName": "leapid",
+      "port": "3306",
+      "userName": "leapid",
+      "passWd": "leapid-db-pwd",
+      "target_position": "HIVE",
+      "conn_name": "LEAP_SYSTEM_HIVE",
+      "source_table": "ALL",
+      "target_db": "default"
+    },
+    {
+      "project": "Public_Repository",
       "dbType": "mysql",
       "host": "10.110.181.39",
       "dbName": "datahub",
@@ -31,6 +64,19 @@
       "passWd": "priestuser",
       "target_position": "HIVE",
       "conn_name": "LEAP_SYSTEM_HIVE",
+      "source_table": [
+        {
+          "db": "priest_db",
+          "table": "ALL"
+        },
+        {
+          "db": "datahub",
+          "table": [
+            "db_info",
+            "job_info"
+          ]
+        }
+      ],
       "target_db": "default"
     }
   ]
