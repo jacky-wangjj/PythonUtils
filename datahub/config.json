@@ -14,7 +14,7 @@
         {
           "db": "testDB",
           "table": [
-            "student2"
+            "student1"
           ]
         }
       ],
@@ -74,6 +74,26 @@
           "table": [
             "db_info",
             "job_info"
+          ]
+        }
+      ],
+      "target_db": "default"
+    },
+    {
+      "project": "Public_Repository",
+      "dbType": "sqlserver",
+      "host": "10.110.181.242",
+      "dbName": "testDB",
+      "port": "1433",
+      "userName": "SA",
+      "passWd": "SQLserver_1",
+      "target_position": "HIVE",
+      "conn_name": "LEAP_SYSTEM_HIVE",
+      "source_table": [
+        {
+          "db": "testDB",
+          "table": [
+            "sqlserver_student"
           ]
         }
       ],
